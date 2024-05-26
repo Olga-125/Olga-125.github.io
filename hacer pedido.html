@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Forma pedido</title>
+      <style>
+      /* Стили для формы */
+       form {
+         max-width: 400px;
+          margin: 0 auto;
+          padding: 20px;
+           border: 1px solid #ccc;
+            border-radius: 5px;
+         }
+    
+        label {
+             display: block;
+              margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box; /* Учитываем внутренние отступы и границы в ширине элемента   */
+        }
+
+        input[type="submit"] {
+             background-color: #4CAF50;
+              color: white;
+               padding: 10px 20px;
+                border: none;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+         }
+        </style>
+            </head>
+
+        <body>
+            <h2>Hacer pedido</h2>
+             <form action="/submit_order" method="post">
+                 <label for="name">Nombre:</label>
+                  <input type="text" id="name" name="name" required>
+         <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+         <label for="address">Direccion:</label>
+          <textarea id="address" name="address" rows="4" required></textarea>
+         <label for="phone">Telefono:</label>
+         <input type="text" id="phone" name="phone" required>
+         <input type="submit" value="Enviar pedido">
+        </form>
+        </body>
+    </html>

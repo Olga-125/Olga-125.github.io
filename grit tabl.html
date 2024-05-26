@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grit CSS tabl</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);  /* Три колонки с равными ширинами */
+            gap: 20px; /* Пространство между колонками и строками */
+        }
+
+        .item {
+            background-color: #b85d32;
+            padding: 30px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1
+            <img src="img.product/zap1.jpg" alt="Producto 1" width="200" height="200">
+           <h3>PRODUCTO 1</h3>
+           <P> Descripcion DE Producto</P>
+    </div>
+        <div class="item">2
+            <img src="img.product/zap2.jpg" alt="Producto 2" width="200" height="200">
+           <h3> Poducto 2</h3>
+           <p>descripcion Producto</p>
+        </div>   
+        <div class="item">3
+
+           <img src="img.product/zap3.jpg" alt="Producto 3" width="200" height="200">
+            <h3>Producto 3</h3>
+            <p>Descripcion 2. jfgldkjfgldkjfgldkjgldkjfgkdj</p>
+            <p class="price">$24.99</p>
+            <button class="btn" onclick="addToCart"> Agregar</button>
+        </div>    
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+</body>
+</html>

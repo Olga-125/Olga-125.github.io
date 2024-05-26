@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda virtual</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    background-image: url('background.jpg'); /* Путь к изображению */
+    background-size: cover; /* Масштабирование изображения, чтобы оно занимало всю доступную область */
+    background-repeat: no-repeat; /* Запрет на повторение изображения */
+}
+
+    </style>
+
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            display: inline-block;
+            margin-right: 50px; /* Пространство между элементами */
+        }
+
+
+        .cart-link {
+            text-decoration: none;
+            color: #e2e4f0;
+            font-size: 18px;
+        }
+        
+    </style>
+
+    
+</head>
+<body>
+    
+    
+    <header>
+        <h1>Nombre de la tienda virtual</h1>
+        <p>telefono 123456789</p>
+    
+        <a href="funcion carrito.html" class="cart-link">Carrito</a>
+        
+      
+        <form action="/search" method="get"> 
+            <input type="search" name="q" placeholder="Buscar">
+            <button type="submit">Buscar</button>
+        </form>
+    
+     <nav>
+            <ul>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="grit tabl.html">Catalogo</a></li>
+                <li><a href="hacer pedido.html">Hacer pedido</a></li>
+                <li><a href="formulario.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="product">
+            <img src="img.product/zap1.jpg" alt="Producto 1">
+            <h2>Producto 1</h2>
+            <p>Descripcion 1. ksjdvhskjdhlshdlshdlshdflshd</p>
+            <p class="price">$19.99</p>
+            <button>Agregar</button>
+        </section>
+
+        <section class="product">
+            <img src="img.product/zap2.jpg" alt="Producto 2">
+            <h2>Producto 2</h2>
+            <p>Descripcion 2. jfgldkjfgldkjfgldkjgldkjfgkdj</p>
+            <p class="price">$24.99</p>
+            <button class="btn" onclick="addToCart"> Agregar</button>
+        </section> 
+        
+    </main>
+    
+
+    <footer>
+        <p>� 2024 tienda virtual</p>
+    </footer>
+</body>
+</html>
