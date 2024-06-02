@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito con calculo</title>
+    <style>
+    
+        .cart {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .cart-item {
+            margin-bottom: 10px;
+        }
+
+    
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Carrito</h2>
+    <div class="cart">
+     <div class="cart-item">
+     <span>Producto 1: $10</span>
+      <button class="btn" onclick="removeItem(10)">Eliminar</button>
+    </div>
+     <div class="cart-item">
+         <span>Producto 2: $15</span>
+          <button class="btn" onclick="removeItem(15)">Eliminar</button>
+         </div>
+          <div class="cart-item">
+         <span>Producto 3: $20</span>
+         <button class="btn" onclick="removeItem(20)">Eliminar</button>
+         </div>
+         <div>Total: <span id="total">0</span></div>
+         </div>
+    <script>
+
+     function removeItem(price) {
+     var totalElement = document.getElementById('total');
+     var currentTotal = parseInt(totalElement.textContent);
+      var newTotal = currentTotal - price;
+       totalElement.textContent = newTotal;
+    }
+    </script>
+    </body>
+    </html>
