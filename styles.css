@@ -7,9 +7,11 @@
             padding: 0;
         }
         header {
-            background-color: #790404;
-            color: #fff;
-            padding: 5px;
+             background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #e2e4f0;
+            padding: 20px;
             text-align: center;
         }
         form {
